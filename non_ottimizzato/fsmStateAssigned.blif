@@ -1,0 +1,176 @@
+.model Controllore
+.inputs IN OUT A B C ERROR_SETTORE
+.outputs SETTORE_NON_VALIDO SBARRA_IN SBARRA_OUT CONTROLLO2 CONTROLLO1
+.latch    [16] LatchOut_v6   1
+.latch    [17] LatchOut_v7   0
+.latch    [18] LatchOut_v8   0
+.start_kiss
+.i 6
+.o 5
+.p 28
+.s 5
+.r SLEEP
+0----0 SLEEP SLEEP 01100
+-0---0 SLEEP SLEEP 01100
+--0--0 SLEEP SLEEP 01100
+---0-0 SLEEP SLEEP 01100
+----00 SLEEP SLEEP 01100
+111110 SLEEP A 00000
+-----0 A B 00001
+-----0 B C 00010
+-----0 C AUTO 00011
+--11-- AUTO AUTO 10000
+--1-1- AUTO AUTO 10000
+---11- AUTO AUTO 10000
+11100- AUTO AUTO 00000
+11010- AUTO AUTO 00000
+11001- AUTO AUTO 00000
+00100- AUTO AUTO 00000
+00010- AUTO AUTO 00000
+00001- AUTO AUTO 00000
+011000 AUTO AUTO 01000
+010100 AUTO AUTO 01000
+010010 AUTO AUTO 01000
+101000 AUTO AUTO 00100
+100100 AUTO AUTO 00100
+100010 AUTO AUTO 00100
+--1001 AUTO AUTO 00000
+--0101 AUTO AUTO 00000
+--0011 AUTO AUTO 00000
+000000 AUTO SLEEP 00000
+.end_kiss
+.latch_order LatchOut_v6 LatchOut_v7 LatchOut_v8
+.code SLEEP 100
+.code A 001
+.code B 111
+.code C 000
+.code AUTO 101
+.names IN OUT A B C LatchOut_v6 LatchOut_v7 LatchOut_v8 [16]
+------01 1
+-----0-0 1
+0----1-0 1
+-0---1-0 1
+--0--1-0 1
+---0-1-0 1
+----01-0 1
+.names LatchOut_v6 LatchOut_v8 [17]
+01 1
+.names IN OUT A B C LatchOut_v6 LatchOut_v7 LatchOut_v8 [18]
+-----0-1 1
+-----0-0 1
+--1---01 1
+---1--01 1
+----1-01 1
+11111--0 1
+.names A B C LatchOut_v6 LatchOut_v7 LatchOut_v8 SETTORE_NON_VALIDO
+11-101 1
+1-1101 1
+-11101 1
+.names IN OUT A B C ERROR_SETTORE LatchOut_v6 LatchOut_v7 LatchOut_v8 \
+SBARRA_IN
+0-----1-0 1
+-0----1-0 1
+--0---1-0 1
+---0--1-0 1
+----0-1-0 1
+0100-010- 1
+010-0010- 1
+01-00010- 1
+.names IN OUT A B C ERROR_SETTORE LatchOut_v6 LatchOut_v7 LatchOut_v8 \
+SBARRA_OUT
+0-----1-0 1
+-0----1-0 1
+--0---1-0 1
+---0--1-0 1
+----0-1-0 1
+1000-010- 1
+100-0010- 1
+10-00010- 1
+.names LatchOut_v6 LatchOut_v7 LatchOut_v8 CONTROLLO2
+-1- 1
+0-0 1
+.names LatchOut_v6 LatchOut_v8 CONTROLLO1
+01 1
+00 1
+.exdc 
+.inputs IN OUT A B C ERROR_SETTORE LatchOut_v6 LatchOut_v7 LatchOut_v8
+.outputs [16] [17] [18] SETTORE_NON_VALIDO SBARRA_IN SBARRA_OUT CONTROLLO2 \
+CONTROLLO1
+.names IN OUT A B C ERROR_SETTORE LatchOut_v6 LatchOut_v7 LatchOut_v8 [16]
+-----10-- 1
+-----1-1- 1
+------01- 1
+-----1--0 1
+-------10 1
+--0001--- 1
+1-000-101 1
+-1000-101 1
+.names IN OUT A B C ERROR_SETTORE LatchOut_v6 LatchOut_v7 LatchOut_v8 [17]
+-----10-- 1
+-----1-1- 1
+------01- 1
+-----1--0 1
+-------10 1
+--0001--- 1
+1-000-101 1
+-1000-101 1
+.names IN OUT A B C ERROR_SETTORE LatchOut_v6 LatchOut_v7 LatchOut_v8 [18]
+-----10-- 1
+-----1-1- 1
+------01- 1
+-----1--0 1
+-------10 1
+--0001--- 1
+1-000-101 1
+-1000-101 1
+.names IN OUT A B C ERROR_SETTORE LatchOut_v6 LatchOut_v7 LatchOut_v8 \
+SETTORE_NON_VALIDO
+-----10-- 1
+-----1-1- 1
+------01- 1
+-----1--0 1
+-------10 1
+--0001--- 1
+1-000-101 1
+-1000-101 1
+.names IN OUT A B C ERROR_SETTORE LatchOut_v6 LatchOut_v7 LatchOut_v8 \
+SBARRA_IN
+-----10-- 1
+-----1-1- 1
+------01- 1
+-----1--0 1
+-------10 1
+--0001--- 1
+1-000-101 1
+-1000-101 1
+.names IN OUT A B C ERROR_SETTORE LatchOut_v6 LatchOut_v7 LatchOut_v8 \
+SBARRA_OUT
+-----10-- 1
+-----1-1- 1
+------01- 1
+-----1--0 1
+-------10 1
+--0001--- 1
+1-000-101 1
+-1000-101 1
+.names IN OUT A B C ERROR_SETTORE LatchOut_v6 LatchOut_v7 LatchOut_v8 \
+CONTROLLO2
+-----10-- 1
+-----1-1- 1
+------01- 1
+-----1--0 1
+-------10 1
+--0001--- 1
+1-000-101 1
+-1000-101 1
+.names IN OUT A B C ERROR_SETTORE LatchOut_v6 LatchOut_v7 LatchOut_v8 \
+CONTROLLO1
+-----10-- 1
+-----1-1- 1
+------01- 1
+-----1--0 1
+-------10 1
+--0001--- 1
+1-000-101 1
+-1000-101 1
+.end

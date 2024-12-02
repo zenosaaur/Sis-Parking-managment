@@ -1,0 +1,9 @@
+.model Registro5
+.inputs A4 A3 A2 A1 A0
+.outputs O4 O3 O2 O1 O0
+.latch    A4 O4 fe NIL 0
+.latch    A3 O3 fe NIL 0
+.latch    A2 O2 fe NIL 0
+.latch    A1 O1 fe NIL 0
+.latch    A0 O0 fe NIL 0
+.end

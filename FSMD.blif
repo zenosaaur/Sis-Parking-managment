@@ -1,0 +1,266 @@
+.model fsmd
+.inputs IN OUT A B C
+.outputs SETTORE_NON_VALIDO SBARRA_IN SBARRA_OUT AFULL BFULL CFULL
+.latch    [16] LatchOut_v6   1
+.latch    [17] LatchOut_v7   0
+.latch    [18] LatchOut_v8   0
+.latch    M0O4 REGA4 fe NIL 0
+.latch    M0O3 REGA3 fe NIL 0
+.latch    M0O2 REGA2 fe NIL 0
+.latch    M0O1 REGA1 fe NIL 0
+.latch    M0O0 REGA0 fe NIL 0
+.latch    M1O4 REGB4 fe NIL 0
+.latch    M1O3 REGB3 fe NIL 0
+.latch    M1O2 REGB2 fe NIL 0
+.latch    M1O1 REGB1 fe NIL 0
+.latch    M1O0 REGB0 fe NIL 0
+.latch    GUARD4 REGC4 fe NIL 0
+.latch    GUARD3 REGC3 fe NIL 0
+.latch    GUARD2 REGC2 fe NIL 0
+.latch    GUARD1 REGC1 fe NIL 0
+.latch    GUARD0 REGC0 fe NIL 0
+.names A [17] SECASELECT [138] [143] SETTORE_NON_VALIDO
+-0-00 1
+1000- 1
+.names SETTORE_NON_VALIDO [18] LatchOut_v8 SELECTSOMMA [137] [141] SBARRA_IN
+-00--- 1
+0--111 1
+.names SETTORE_NON_VALIDO [18] LatchOut_v8 [137] [140] SBARRA_OUT
+-00-- 1
+0--11 1
+.names M0O4 M0O3 M0O2 M0O1 M0O0 AFULL
+11111 1
+.names M1O4 M1O3 M1O2 M1O1 M1O0 BFULL
+11111 1
+.names GUARD4 GUARD3 GUARD2 GUARD1 GUARD0 CFULL
+11000 1
+.names A LatchOut_v6 LatchOut_v8 [129] [138] [143] [16]
+----0- 1
+0-0--- 1
+-00--- 1
+--01-- 1
+--0--1 1
+.names LatchOut_v6 LatchOut_v8 [17]
+01 1
+.names [16] LatchOut_v6 LatchOut_v8 [139] [18]
+-0-- 1
+0-0- 1
+1-11 1
+.names IN REGA4 INVALUE_A [486] [494] [503] [133] [148] M0O4
+1-1----- 1
+-1-1---- 1
+-----11- 1
+----1--1 1
+.names OUT INVALUE_A MUXSOMM3 MUXSOTT3 REGA3 [486] [494] [503] M0O3
+11------ 1
+----11-- 1
+---1--1- 1
+--1----1 1
+.names A INVALUE_A MUXSOMM2 MUXSOTT2 REGA2 [486] [494] [503] M0O2
+11------ 1
+----11-- 1
+---1--1- 1
+--1----1 1
+.names B INVALUE_A MUXSOMM1 MUXSOTT1 REGA1 [486] [494] [503] M0O1
+11------ 1
+----11-- 1
+---1--1- 1
+--1----1 1
+.names C REGA0 INVALUE_A [486] [494] [503] [480] [130] M0O0
+1-1----- 1
+-1-1---- 1
+----1-1- 1
+-----1-1 1
+.names IN REGB4 INVALUE_B [489] [496] [499] [133] [148] M1O4
+1-1----- 1
+-1-1---- 1
+----1-1- 1
+-----1-1 1
+.names OUT MUXSOMM3 MUXSOTT3 INVALUE_B REGB3 [489] [496] [499] M1O3
+1--1---- 1
+----11-- 1
+-1----1- 1
+--1----1 1
+.names A MUXSOMM2 MUXSOTT2 INVALUE_B REGB2 [489] [496] [499] M1O2
+1--1---- 1
+----11-- 1
+-1----1- 1
+--1----1 1
+.names B MUXSOMM1 MUXSOTT1 INVALUE_B REGB1 [489] [496] [499] M1O1
+1--1---- 1
+----11-- 1
+-1----1- 1
+--1----1 1
+.names C REGB0 [480] INVALUE_B [489] [496] [499] [130] M1O0
+1--1---- 1
+-1--1--- 1
+--1---1- 1
+-----1-1 1
+.names IN REGC4 INVALUE_C [501] [522] [133] [148] GUARD4
+1-1---- 1
+-1--1-- 1
+---1-1- 1
+----0-1 1
+.names OUT MUXSOMM3 MUXSOTT3 INVALUE_C REGC3 [500] [501] [522] GUARD3
+1--1---- 1
+--1--1-- 1
+-1----1- 1
+----1--1 1
+.names A REGC2 MUXSOMM2 MUXSOTT2 [501] [522] [500] [149] GUARD2
+--1-1--- 1
+-1---1-- 1
+---1--1- 1
+1------1 1
+.names B REGC1 MUXSOTT1 MUXSOMM1 [501] [522] [500] [149] GUARD1
+---11--- 1
+-1---1-- 1
+--1---1- 1
+1------1 1
+.names C REGC0 [480] [501] [522] [500] [130] [149] GUARD0
+-1--1--- 1
+--1--1-- 1
+---1--1- 1
+1------1 1
+.names OPERATIONIN4 OPERATIONIN3 OPERATIONIN0 SECCSELECT [134] SELECTSOMMA
+0---- 1
+-0--- 1
+--00- 1
+---01 1
+.names IN OUT [137] [139] RESET
+0010 1
+.names [17] RESET INVALUE_C INVALUE_A
+-1- 1
+1-0 1
+.names A B C [137] SECASELECT
+1001 1
+.names REGA4 REGB4 REGC4 [485] [487] [488] OPERATIONIN4
+1--1-- 1
+--1-1- 1
+-1---1 1
+.names OPERATIONIN3 [144] MUXSOTT3
+11 1
+00 1
+.names REGA3 REGB3 REGC3 [485] [487] [488] OPERATIONIN3
+1--1-- 1
+--1-1- 1
+-1---1 1
+.names OPERATIONIN3 [145] MUXSOMM3
+11 1
+00 1
+.names REGA2 REGB2 REGC2 [485] [487] [488] OPERATIONIN2
+1--1-- 1
+--1-1- 1
+-1---1 1
+.names OPERATIONIN2 [146] MUXSOMM2
+11 1
+00 1
+.names OPERATIONIN1 [507] MUXSOTT1
+11 1
+00 1
+.names REGA1 REGB1 REGC1 [485] [487] [488] OPERATIONIN1
+1--1-- 1
+--1-1- 1
+-1---1 1
+.names OPERATIONIN2 MUXSOTT1 OPERATIONIN1 [134] MUXSOTT2
+---0 1
+10-- 1
+010- 1
+.names OPERATIONIN1 [147] MUXSOMM1
+11 1
+00 1
+.names OPERATIONIN4 OPERATIONIN3 OPERATIONIN0 [134] [507]
+--1- 1
+00-1 1
+.names INVALUE_A [494] [503] [486]
+000 1
+.names SECASELECT [140] [494]
+11 1
+.names SECASELECT [141] [503]
+11 1
+.names OPERATIONIN4 OPERATIONIN3 OPERATIONIN2 [507] OPERATIONIN0 [480]
+---0- 1
+000-1 1
+.names REGA0 REGB0 REGC0 [485] [487] [488] OPERATIONIN0
+1--1-- 1
+--1-1- 1
+-1---1 1
+.names C [132] [137] SECCSELECT
+101 1
+.names A [136] [485]
+11 1
+.names [132] [136] [487]
+01 1
+.names B [136] [488]
+11 1
+.names LatchOut_v6 LatchOut_v7 RESET INVALUE_B
+--1 1
+11- 1
+.names A B C [137] SECBSELECT
+0101 1
+.names INVALUE_B [496] [499] [489]
+000 1
+.names SECBSELECT [141] [496]
+11 1
+.names SECBSELECT [140] [499]
+11 1
+.names LatchOut_v6 RESET [138] INVALUE_C
+-1- 1
+0-1 1
+.names SECCSELECT [141] [501]
+11 1
+.names INVALUE_C [501] [500] [522]
+000 1
+.names SECCSELECT [140] [500]
+11 1
+.names IN OUT [129]
+0- 1
+-0 1
+.names SELECTSOMMA OPERATIONIN0 [130]
+01 1
+10 1
+.names A B [132]
+1- 1
+-1 1
+.names OPERATIONIN4 OPERATIONIN3 MUXSOMM3 [133]
+1-- 1
+-10 1
+.names OPERATIONIN2 OPERATIONIN1 [134]
+0- 1
+-0 1
+.names SECASELECT SECCSELECT SECBSELECT [136]
+1-- 1
+-1- 1
+--1 1
+.names LatchOut_v6 LatchOut_v7 [137]
+10 1
+.names LatchOut_v7 LatchOut_v8 [138]
+1- 1
+-0 1
+.names C [132] [139]
+1- 1
+-1 1
+.names IN OUT [140]
+10 1
+.names IN OUT [141]
+01 1
+.names B C [143]
+0- 1
+-0 1
+.names OPERATIONIN2 MUXSOTT2 [144]
+1- 1
+-0 1
+.names OPERATIONIN2 MUXSOMM2 [145]
+0- 1
+-1 1
+.names OPERATIONIN1 MUXSOMM1 [146]
+0- 1
+-1 1
+.names SELECTSOMMA OPERATIONIN0 [147]
+0- 1
+-0 1
+.names OPERATIONIN4 MUXSOTT3 OPERATIONIN3 [148]
+10- 1
+1-1 1
+.names INVALUE_C [129] [149]
+11 1
+.end

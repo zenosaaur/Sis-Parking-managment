@@ -1,0 +1,25 @@
+.model Sommatore5
+.inputs A4 A3 A2 A1 A0
+.outputs O4 O3 O2 O1 O0 COUT
+.names A4 C4 O4
+01 1
+10 1
+.names A3 A2 O2 C4 O3
+1--0 1
+-100 1
+.names A2 [81] O2
+11 1
+00 1
+.names A1 A0 O1
+01 1
+10 1
+.names A0 O0
+0 1
+.names A4 C4 COUT
+11 1
+.names A3 A2 [81] C4
+110 1
+.names A1 A0 [81]
+0- 1
+-0 1
+.end

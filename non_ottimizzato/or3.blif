@@ -1,0 +1,8 @@
+.model Or3
+.inputs A B C
+.outputs X
+.names A B C X
+000 0
+
+.end
+

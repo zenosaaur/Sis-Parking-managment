@@ -1,0 +1,108 @@
+
+read_blif and.blif
+source script.rugged
+write_blif ../and.blif
+
+read_blif comparatore2.blif
+source script.rugged
+write_blif ../comparatore2.blif
+
+read_blif comparatore3.blif
+source script.rugged
+write_blif ../comparatore3.blif
+
+read_blif comparatore5.blif
+source script.rugged
+write_blif ../comparatore5.blif
+
+read_blif maggiorestretto5.blif
+source script.rugged
+write_blif ../maggiorestretto5.blif
+
+read_blif minorestretto5.blif
+source script.rugged
+write_blif ../minorestretto5.blif
+
+read_blif multiplexer2_1.blif
+source script.rugged
+write_blif ../multiplexer2_1.blif
+
+read_blif multiplexer2_2.blif
+source script.rugged
+write_blif ../multiplexer2_2.blif
+
+read_blif multiplexer2_5.blif
+source script.rugged
+write_blif ../multiplexer2_5.blif
+
+read_blif multiplexer4_1.blif
+source script.rugged
+write_blif ../multiplexer4_1.blif
+
+read_blif multiplexer4_5.blif
+source script.rugged
+write_blif ../multiplexer4_5.blif
+
+read_blif nor.blif
+source script.rugged
+write_blif ../nor.blif
+
+read_blif not.blif
+source script.rugged
+write_blif ../not.blif
+
+read_blif or.blif
+source script.rugged
+write_blif ../or.blif
+
+read_blif or3.blif
+source script.rugged
+write_blif ../or3.blif
+
+read_blif registro.blif
+source script.rugged
+write_blif ../registro.blif
+
+read_blif registro5.blif
+source script.rugged
+write_blif ../registro5.blif
+
+read_blif sommatore.blif
+source script.rugged
+write_blif ../sommatore.blif
+
+read_blif sommatore5.blif
+source script.rugged
+write_blif ../sommatore5.blif
+
+read_blif sottrattore.blif
+source script.rugged
+write_blif ../sottrattore.blif
+
+read_blif sottrattore5.blif
+source script.rugged
+write_blif ../sottrattore5.blif
+
+read_blif uho.blif
+source script.rugged
+write_blif ../uno.blif
+
+read_blif xnor.blif
+source script.rugged
+write_blif ../xnor.blif
+
+read_blif xor.blif
+source script.rugged
+write_blif ../xor.blif
+
+read_blif xnor.blif
+source script.rugged
+write_blif ../xnor.blif
+
+read_blif xor.blif
+source script.rugged
+write_blif ../xor.blif
+
+read_blif zero.blif
+source script.rugged
+write_blif ../zero.blif

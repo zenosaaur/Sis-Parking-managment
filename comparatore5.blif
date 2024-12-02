@@ -1,0 +1,18 @@
+.model Uguale5
+.inputs A4 A3 A2 A1 A0 B4 B3 B2 B1 B0
+.outputs O
+.names A1 A0 B1 B0 X4 [10] [11] O
+1111111 1
+0101111 1
+1010111 1
+0000111 1
+.names A4 B4 X4
+11 1
+00 1
+.names A3 B3 [10]
+11 1
+00 1
+.names A2 B2 [11]
+11 1
+00 1
+.end

@@ -1,0 +1,6 @@
+.model Registro
+.inputs A
+.outputs O
+.latch A O fe NIL 0 
+
+.end

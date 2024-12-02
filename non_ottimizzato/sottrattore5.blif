@@ -1,0 +1,15 @@
+.model Sottrattore5
+.inputs A4 A3 A2 A1 A0 
+.outputs O4 O3 O2 O1 O0 COUT
+.subckt zero O=Z
+.subckt uno O=U
+.subckt Sottrattore A=A0 B=U CIN=Z O=O0 COUT=C1
+.subckt Sottrattore A=A1 B=Z CIN=C1 O=O1 COUT=C2
+.subckt Sottrattore A=A2 B=Z CIN=C2 O=O2 COUT=C3
+.subckt Sottrattore A=A3 B=Z CIN=C3 O=O3 COUT=C4
+.subckt Sottrattore A=A4 B=Z CIN=C4 O=O4 COUT=COUT
+.search sottrattore.blif
+.search uno.blif
+.search zero.blif
+
+.end

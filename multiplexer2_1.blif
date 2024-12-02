@@ -1,0 +1,7 @@
+.model Mux2_1
+.inputs S i1 i0
+.outputs O
+.names S i1 i0 O
+11- 1
+0-1 1
+.end

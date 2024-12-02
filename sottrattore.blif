@@ -1,0 +1,13 @@
+.model Sottrattore
+.inputs A B CIN
+.outputs O COUT
+.names K CIN O
+01 1
+10 1
+.names B CIN K COUT
+1-1 1
+-10 1
+.names A B K
+01 1
+10 1
+.end
